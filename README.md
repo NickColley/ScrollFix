@@ -8,4 +8,5 @@ Uses some of https://github.com/joelambert/ScrollFix
 
 Usage
 =====
-Include scrollfix.min.js after the body
+Include scrollfix.min.js after the body.
+You might want to use -webkit-overflow-scrolling: touch; on your scrollable elements too!
