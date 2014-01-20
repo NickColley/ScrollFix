@@ -4,11 +4,12 @@
 	}, false);
 	document.addEventListener('touchstart', function(e){
 		var elem = isScrollElement(e.target);
+		var startTopScroll = 0;
 		if(elem) {
-			var startTopScroll = elem.scrollTop;
+			startTopScroll = elem.scrollTop;
 			if(startTopScroll <= 0) { elem.scrollTop = 1; }
-			if(startTopScroll + elem.offsetHeight >= elem.scrollHeight) {
-				elem.scrollTop = elem.scrollHeight - elem.offsetHeight - 1;
+			if(startTopScroll + elem.clientHeight >= elem.scrollHeight) {
+				elem.scrollTop = elem.scrollHeight - elem.clientHeight - 1;
 			}
 		}
 	}, false);
