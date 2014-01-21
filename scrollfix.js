@@ -19,7 +19,7 @@
 				(window.getComputedStyle(element).overflow === 'scroll' ||
 				window.getComputedStyle(element)["overflow-y"] === 'scroll' ||
 				window.getComputedStyle(element)["overflow-x"] === 'scroll') &&
-				element.scrollHeight > window.innerHeight
+				element.scrollHeight > element.clientHeight
 				) {
 				return element;
 			}
