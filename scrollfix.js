@@ -27,4 +27,6 @@
 		}
 		return false;
 	}
+	var all_elem = document.body.getElementsByTagName('*');
+	for (var i = all_elem.length - 1; i >= 0; i--) { all_elem[i].scrollTop = 1; }
 })(window, document);
